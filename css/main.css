@@ -3,13 +3,13 @@
 /* flex direction */
 .container {
     border: 1px solid white;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    /* height: 300px; */
     display: flex;
     /* float: left; */
 
     /* flex-flow combines flex direction and wrap */
-    flex-flow: row wrap;
+    /* flex-flow: row-reverse wrap-reverse; */
 
     /* flex wrap */
     /* flex-wrap: no-wrap; */
@@ -20,12 +20,12 @@
     /* align-items: stretch; */
     /* align-items: center; */
     /* align-items: baseline; */
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* align-items: flex-end; */
 
     /* flex-direction */
     /* flex-direction: row-reverse; */
-    /* flex-direction: row; */
+    flex-direction: row;
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
 
@@ -50,23 +50,48 @@
 
     /* ordering */
 .container div:nth-child(2){
-    order: -1;
-    align-self: stretch;
+    /* order: -1; */
+    /* align-self: stretch; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
 }
 
 .container div:nth-child(5){
-    order: 1;
-    align-self: flex-end;
+    /* order: 1; */
+    /* align-self: flex-end; */
+    /* flex-shrink: 3; */
+
 }
 
 .container div:nth-child(3){
-    order: 5;
+    /* order: 5; */
 }
 
 .container div {
-    /* float: right; */
+    float: right;
+    /* width: 150px; */
+    margin: 0;
+    flex-basis: 100px;
+    /* padding: 0; */
+    /* flex-shrink: 0; */
+    flex-grow: 1;
 }
 /* 
 .container div:nth-child(2){
     font-size: 40px;
 } */
+
+
+/*
+flex basis
+container has a) space left or b) is overfull
+look at a) flex-grow and b) flex-shrink
+calculate portions each items will grow / shrink
+add that to the base size
+
+flex is commonly used as flex: 1 1 25%
+first value is what you want it to grow
+second value is what you want it to shrink too
+third value is the flex basis
+*/
+
