@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+.grid {
+    display: flex;
+}
+
+.vcenter {
+    display: flex;
+    height: 100px;
+    /* justify-content: space-around; */
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.vcenter p{
+    margin: auto;
+}
+nav {
+    width: vw;
+    /* float: right; */
+    /* display: flex; */
+
+   
+}
+
+li {
+    /* display: flex; */
+    list-style-type: none;
+    flex-basis: 25%;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    /* align-items: space-around; */
+}
+
+.vcenter2 {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+/* p{
+    margin: auto;
+} */
+
+.gutters {
+    margin: -10px 0 10px -10px;
+}
+
+.gutters > div {
+    padding: 10px 0 0 10px;
+    /* margin: auto; */
+}
+
+.grid div div {
+    background-color: salmon;
+    padding: 10px;
+    height: 100%;
+}
+
+.half {
+    flex-basis: 50%;
+}
+
+.thrid {
+    flex-basis: 33.33333%;
+}
+
+.fourth {
+    flex-basis: 25%;
+}
+
+.fifth {
+    flex-basis: 20%;
+}
+
+.sixth {
+    flex-basis: 16.66666%;
+}

@@ -1,0 +1,22 @@
+*{
+    background-color: skyblue;
+}
+
+.media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.figure {
+    flex: 1 1 10%;
+    align-self: start;
+    /* order: 0; */
+}
+
+.media-body {
+    flex: 1 1 40%;
+}
+
+p {
+    margin: 0 10px 20px 10px;
+}
